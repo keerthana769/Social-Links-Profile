@@ -72,11 +72,17 @@ a:focus{
   cursor: pointer;
   background-color: hsl(75, 94%, 57%);
 }
+
+a:{
+  text-decoration: none;
+}
 ```
 
 ### Continued development
 
 For now, I’ve added a simple HTML placeholder page in place of my portfolio. Once I finish learning the skills I need to build a complete portfolio website, I plan to replace it with a fully designed and functional version.
+
+I also want to improve the accessibility of my projects, especially when it comes to link text. In future projects, I plan to add more descriptive or visually hidden text so that these links provide clearer meaning and a better experience for users who rely on assistive technologies.
 
 ### Useful resources
 
