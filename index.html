@@ -6,27 +6,117 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Social links profile</title>
-
+  <title>Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+    html{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: hsl(0, 0%, 8%);
+    }
+    .container{
+      background-color: hsl(0, 0%, 12%);
+      max-width: 384px;
+    }
+    *{
+      margin: 0;
+    }
+    body{
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .card{
+      padding: 40px;
+      /*justify-items: center; this will cancel height & width*/
+      text-align: center;
+    }
+    nav{
+      max-width: 304px;
+    }
+    nav a button{
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    button:hover{
+      color: hsl(0, 0%, 8%);
+      cursor: pointer;
+      background-color: hsl(75, 94%, 57%);
+    }
+    nav{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    figure, header, .tag{
+      padding-bottom: 24px;
+    }
+    h1, .tag,nav a button{
+      color: hsl(0, 0%, 100%);
+    }
+    .location{
+      color: hsl(75, 94%, 57%);
+    }
+    .location, .tag{
+      font-size: 14px;
+      font-weight: 400px;
+    }
+    h1, .location, .tag,nav a button{
+      letter-spacing: 0px;
+      line-height: 150%;
+    }
+    h1{
+      padding-bottom: 4px;
+      font-weight: 700px;
+      font-size: 24px;
+    }
+    figure img{
+      border-radius: 999px;
+      height: 88px;
+    }
+    @media(max-width:375px){
+      .container{
+        max-width: 327px;
+      }
+      .card{
+        padding: 24px;
+      }
+    }
   </style>
 </head>
 <body>
   <main class="container">
-    <figure>
-      <img src="./assets/images/avatar-jessica.jpeg"/>
-    </figure>
-    <h1>Jessica Randall</h1>
-    <location>London, United Kingdom</location>
-    <p>"Front-end developer and avid reader."</p>
-    <a href="https://github.com/keerthana769/"><button>GitHub</button></a>
-    <a href="https://www.frontendmentor.io/profile/keerthana769/"><button>Frontend Mentor</button></a>
-    <a href="https://www.linkedin.com/in/keerthana-gurram/"><button>LinkedIn</button></a>
-    <a href="https://github.com/keerthana769/"><button>Twitter</button></a>
-    <a href="https://www.instagram.com/keerthi_cutes/"><button>Instagram</button></a>
+    <article class="card">
+      <figure>
+        <img src="./assets/images/avatar-jessica.jpeg"/>
+      </figure>
+      <header>
+        <h1>Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+      </header>
+      <p class="tag">"Front-end developer and avid reader."</p>
+      <nav>
+        <a href="https://github.com/keerthana769/"><button>GitHub</button></a>
+        <a href="https://www.frontendmentor.io/profile/keerthana769/"><button>Frontend Mentor</button></a>
+        <a href="https://www.linkedin.com/in/keerthana-gurram/"><button>LinkedIn</button></a>
+        <a href="./coming-soon.html"><button>Portfolio</button></a>
+        <a href="https://www.instagram.com/keerthi_cutes/"><button>Instagram</button></a>
+      </nav>
+    </article>
   </main>
 </body>
 </html>
