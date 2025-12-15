@@ -10,101 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
 
-    
-    html{
-      font-family: "Inter", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      background-color: hsl(0, 0%, 8%);
-    }
-    .container{
-      background-color: hsl(0, 0%, 12%);
-      max-width: 384px;
-    }
-    *{
-      margin: 0;
-    }
-    body{
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-    }
-    .card{
-      padding: 40px;
-      /*justify-items: center; this will cancel height & width*/
-      text-align: center;
-    }
-    nav{
-      max-width: 304px;
-    }
-    nav a{
-      background-color: hsl(0, 0%, 20%);
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 14px;
-      text-decoration: none;
-    }
-    a:focus{
-      color: hsl(0, 0%, 8%);
-      cursor: pointer;
-      background-color: hsl(75, 94%, 57%);
-    }
-    a:hover{
-      color: hsl(0, 0%, 8%);
-      cursor: pointer;
-      background-color: hsl(75, 94%, 57%);
-    }
-    nav{
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    figure, header, .tag{
-      padding-bottom: 24px;
-    }
-    .heading, .tag,nav a{
-      color: hsl(0, 0%, 100%);
-    }
-    .location{
-      color: hsl(75, 94%, 57%);
-      font-weight: bold;
-    }
-    .location, .tag{
-      font-size: 14px;
-    }
-    .tag{
-      font-weight: 400px;
-    }
-    .heading, .location, .tag,nav a{
-      letter-spacing: 0px;
-      line-height: 150%;
-    }
-    .heading{
-      padding-bottom: 4px;
-      font-weight: 700px;
-      font-size: 24px;
-    }
-    figure img{
-      border-radius: 999px;
-      height: 88px;
-    }
-    @media(max-width:375px){
-      .container{
-        max-width: 327px;
-      }
-      .card{
-        padding: 24px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <main class="container">
@@ -118,13 +25,15 @@
       </header>
       <p class="tag">"Front-end developer and avid reader."</p>
       <nav>
-        <a href="https://github.com/keerthana769/">GitHub</a>
-        <a href="https://www.frontendmentor.io/profile/keerthana769/">Frontend Mentor</a>
-        <a href="https://www.linkedin.com/in/keerthana-gurram/">LinkedIn</a>
-        <a href="./coming-soon.html">Portfolio</a>
-        <a href="https://www.instagram.com/keerthi_cutes/">Instagram</a>
+        <a class="link-btn" href="https://github.com/keerthana769/">GitHub</a>
+        <a class="link-btn" href="https://www.frontendmentor.io/profile/keerthana769/">Frontend Mentor</a>
+        <a class="link-btn" href="https://www.linkedin.com/in/keerthana-gurram/">LinkedIn</a>
+        <a class="link-btn" href="./coming-soon.html">Portfolio</a>
+        <a class="link-btn" href="https://www.instagram.com/keerthi_cutes/">Instagram</a>
       </nav>
     </article>
   </main>
 </body>
 </html>
+
+

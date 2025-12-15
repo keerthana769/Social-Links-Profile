@@ -1,7 +1,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -13,12 +12,6 @@
 
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
@@ -83,6 +76,12 @@ a:{
 For now, I’ve added a simple HTML placeholder page in place of my portfolio. Once I finish learning the skills I need to build a complete portfolio website, I plan to replace it with a fully designed and functional version.
 
 I also want to improve the accessibility of my projects, especially when it comes to link text. In future projects, I plan to add more descriptive or visually hidden text so that these links provide clearer meaning and a better experience for users who rely on assistive technologies.
+
+Few changes to do:
+- Use global selectors to move repeated base styles (fonts, resets, layout defaults) into one place.
+- Add CSS variables for colors to make updates and theme changes easier.
+- Set a consistent spacing scale (8px, 16px, 24px, etc.) for cleaner, more uniform layout.
+- Reduce repeated values by refactoring common padding, text sizes, and shared styles into reusable rules.
 
 ### Useful resources
 
